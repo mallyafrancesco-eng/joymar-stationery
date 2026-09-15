@@ -1,0 +1,1071 @@
+```html
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="JOYMAR STATIONERY - Photocopy, Printing, Typing, Scanning, Cards, Custom Printing na vifaa vya ofisini na shuleni.">
+
+    <title>JOYMAR STATIONERY | Printing & General Supplies</title>
+
+    <style>
+        /* =========================
+           GENERAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7f5;
+            color: #17351f;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: #006b35;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            color: #ffd900;
+        }
+
+        .logo small {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd900;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            background: linear-gradient(120deg, #006b35, #009447);
+            color: white;
+            padding: 90px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffd900;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-yellow {
+            background: #ffd900;
+            color: #17351f;
+        }
+
+        .btn-yellow:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #006b35;
+        }
+
+        .hero-box {
+            background: #ffd900;
+            color: #17351f;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero-box .icon {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .hero-box h2 {
+            font-size: 30px;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            color: #006b35;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            border-top: 5px solid #006b35;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.13);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .service-card h3 {
+            color: #006b35;
+            margin-bottom: 12px;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            margin: 8px 0;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            color: #009447;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about h2 {
+            color: #006b35;
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .about p {
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .feature {
+            background: #eef8f1;
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd900;
+        }
+
+        .feature strong {
+            color: #006b35;
+        }
+
+
+        /* =========================
+           ORDER
+        ========================== */
+
+        .order-section {
+            background: #006b35;
+            color: white;
+        }
+
+        .order-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            color: #222;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .order-box h2 {
+            color: #006b35;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            background: #ffd900;
+            color: #17351f;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #006b35;
+            color: white;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 28px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .contact-card .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            color: #006b35;
+            margin-bottom: 8px;
+        }
+
+        .contact-card a {
+            color: #006b35;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           WHATSAPP
+        ========================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #25D366;
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            z-index: 999;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #004d26;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer h3 {
+            color: #ffd900;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: #006b35;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-content,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+
+
+        @media (max-width: 550px) {
+
+            .container {
+                width: 92%;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+        <div class="container navbar">
+
+            <div class="logo">
+                JOYMAR <span>STATIONERY</span>
+                <small>PRINTING & GENERAL SUPPLIES</small>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Huduma</a></li>
+                <li><a href="#about">Kuhusu Sisi</a></li>
+                <li><a href="#order">Agiza</a></li>
+                <li><a href="#contact">Wasiliana</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div>
+
+                <h1>
+                    Karibu <span>JOYMAR STATIONERY</span>
+                </h1>
+
+                <p>
+                    Tunakuhudumia kwa Photocopy, Printing, Typing,
+                    Scanning, kadi mbalimbali, custom printing
+                    na vifaa vya ofisini na shuleni.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="https://wa.me/255765553405"
+                        class="btn btn-yellow"
+                        target="_blank">
+                        💬 WhatsApp
+                    </a>
+
+                    <a href="#services" class="btn btn-outline">
+                        Tazama Huduma
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-box">
+
+                <div class="icon">🖨️</div>
+
+                <h2>
+                    UBORA • HARAKA • BEI NAFUU
+                </h2>
+
+                <p>
+                    Huduma zako zote sehemu moja.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section id="services">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Huduma Zetu</h2>
+                <p>Tunakushughulikia mahitaji yako kwa ubora na haraka.</p>
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🖨️</div>
+
+                    <h3>Photocopy & Printing</h3>
+
+                    <ul>
+                        <li>Photocopy</li>
+                        <li>Printing</li>
+                        <li>Black & White</li>
+                        <li>Colour Printing</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">💻</div>
+
+                    <h3>Typing & Scanning</h3>
+
+                    <ul>
+                        <li>Typing</li>
+                        <li>Scanning</li>
+                        <li>PDF Documents</li>
+                        <li>Document Preparation</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">📄</div>
+
+                    <h3>Vyeti & Nyaraka</h3>
+
+                    <ul>
+                        <li>Vyeti vya Kuzaliwa</li>
+                        <li>Vyeti vya Kifo</li>
+                        <li>Uchapishaji wa Nyaraka</li>
+                        <li>Huduma za Nyaraka</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🎉</div>
+
+                    <h3>Kadi</h3>
+
+                    <ul>
+                        <li>Kadi za Sherehe</li>
+                        <li>Kadi za Birthday</li>
+                        <li>Kadi za Harusi</li>
+                        <li>Kadi za Kliniki</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">👕</div>
+
+                    <h3>Custom Printing</h3>
+
+                    <ul>
+                        <li>T-Shirt Printing</li>
+                        <li>Kuprint Vikombe</li>
+                        <li>Kuprint Sahani</li>
+                        <li>Kuprint Kofia</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🎒</div>
+
+                    <h3>Office & School Supplies</h3>
+
+                    <ul>
+                        <li>Vifaa vya Ofisini</li>
+                        <li>Vifaa vya Shuleni</li>
+                        <li>Kalamu na Penseli</li>
+                        <li>Madaftari na Files</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <div class="container about-grid">
+
+            <div>
+
+                <h2>Kuhusu JOYMAR STATIONERY</h2>
+
+                <p>
+                    JOYMAR STATIONERY ni ofisi inayotoa huduma
+                    mbalimbali za uchapishaji na stationery.
+                </p>
+
+                <p>
+                    Tunapatikana <strong>Chunya, Ifumbo – Soko Jipya</strong>
+                    na tunalenga kutoa huduma bora, haraka na kwa bei nafuu.
+                </p>
+
+                <p>
+                    Tunahudumia wanafunzi, wafanyabiashara,
+                    taasisi, ofisi na jamii kwa ujumla.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature">
+                    ⭐ <strong>Ubora</strong><br>
+                    Tunazingatia ubora wa kazi.
+                </div>
+
+                <div class="feature">
+                    ⚡ <strong>Haraka</strong><br>
+                    Tunakuhudumia kwa wakati.
+                </div>
+
+                <div class="feature">
+                    💰 <strong>Bei Nafuu</strong><br>
+                    Huduma kwa gharama rafiki.
+                </div>
+
+                <div class="feature">
+                    🤝 <strong>Uaminifu</strong><br>
+                    Mteja ni sehemu ya huduma yetu.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ORDER
+    ========================== -->
+
+    <section class="order-section" id="order">
+
+        <div class="container">
+
+            <div class="order-box">
+
+                <h2>Agiza Huduma Kupitia WhatsApp</h2>
+
+                <form onsubmit="sendWhatsApp(event)">
+
+                    <div class="form-group">
+
+                        <label>Jina lako</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Andika jina lako"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Chagua huduma</label>
+
+                        <select id="service" required>
+
+                            <option value="">
+                                -- Chagua huduma --
+                            </option>
+
+                            <option>Photocopy</option>
+                            <option>Printing</option>
+                            <option>Typing</option>
+                            <option>Scanning</option>
+                            <option>Vyeti vya Kuzaliwa</option>
+                            <option>Vyeti vya Kifo</option>
+                            <option>Kadi za Sherehe</option>
+                            <option>Kadi za Kliniki</option>
+                            <option>T-Shirt Printing</option>
+                            <option>Kuprint Vikombe</option>
+                            <option>Kuprint Sahani</option>
+                            <option>Kuprint Kofia</option>
+                            <option>Vifaa vya Ofisini</option>
+                            <option>Vifaa vya Shuleni</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Maelezo ya kazi</label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Eleza unachohitaji..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button class="submit-btn" type="submit">
+                        💬 Tuma Oda WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Wasiliana Nasi</h2>
+
+                <p>
+                    Tupo tayari kukuhudumia.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-card">
+
+                    <div class="icon">📍</div>
+
+                    <h3>Location</h3>
+
+                    <p>
+                        Chunya, Ifumbo<br>
+                        Soko Jipya
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="icon">📞</div>
+
+                    <h3>Simu</h3>
+
+                    <p>
+                        <a href="tel:0765553405">
+                            0765 553 405
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="tel:0675102636">
+                            0675 102 636
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="icon">💬</div>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        <a
+                            href="https://wa.me/255765553405"
+                            target="_blank">
+                            Tuma Ujumbe WhatsApp
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>JOYMAR STATIONERY</h3>
+
+        <p>
+            Printing & General Supplies
+        </p>
+
+        <p>
+            Chunya, Ifumbo – Soko Jipya
+        </p>
+
+        <p>
+            0765553405 | 0675102636
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 JOYMAR STATIONERY. Haki zote zimehifadhiwa.
+        </p>
+
+    </footer>
+
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+
+    <a
+        href="https://wa.me/255765553405"
+        class="whatsapp"
+        target="_blank"
+        title="Wasiliana WhatsApp">
+
+        💬
+
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // Mobile menu
+        function toggleMenu() {
+
+            document
+                .getElementById("navLinks")
+                .classList
+                .toggle("active");
+
+        }
+
+
+        // WhatsApp order
+        function sendWhatsApp(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("name").value;
+
+            const service =
+                document.getElementById("service").value;
+
+            const message =
+                document.getElementById("message").value;
+
+
+            const text =
+                "Habari JOYMAR STATIONERY.%0A%0A" +
+                "Jina: " + encodeURIComponent(name) +
+                "%0A" +
+                "Huduma: " + encodeURIComponent(service) +
+                "%0A" +
+                "Maelezo: " + encodeURIComponent(message);
+
+
+            const whatsappNumber = "255675102636";
+
+            const url =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                text;
+
+
+            window.open(url, "_blank");
+
+        }
+
+
+        // Close mobile menu after clicking a link
+        document
+            .querySelectorAll(".nav-links a")
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList
+                        .remove("active");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+</html>
+```
