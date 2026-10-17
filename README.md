@@ -694,7 +694,7 @@
 
                 <p>
                     Tunakupa huduma mbalimbali za uchapishaji,
-                    stationery na huduma za kidigitali kwa ubora
+                    stationery na huduma za kidigitali kwa ubora mkubwa
                     na uaminifu.
                 </p>
 
